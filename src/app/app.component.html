@@ -1,17 +1,21 @@
 <div class="container">
   <div style="width: 100vw; height: 10vh; background-color: dodgerblue;">
-    <h1 class="toolbar-text">ReKrunch Real Estate</h1>
+    <h1 class="toolbar-text">ReKrunch Real Estate Analyzer</h1>
   </div>
   <mat-grid-list cols="12" style="height: 90vh;" rowHeight="fit" gutterSize="5px">
-    <mat-grid-tile [colspan]="3" style="background-color: gray;">
-      <mat-card class="property-list-card">
-        <mat-card-title><h4 class="property-list-card-head">Properties:</h4><hr></mat-card-title>
+    <mat-grid-tile [colspan]="3">
+      <mat-card class="property-list-card" style="overflow: auto;">
+        <mat-card-title><h4 class="property-list-card-head">Properties</h4><hr></mat-card-title>
         <mat-card-content>
           <mat-nav-list>
-            <a mat-list-item href="..." *ngFor="let item of items | async"> {{ item.name }} </a>
+            <a mat-list-item href="..."><span style="color: dodgerblue;">Add New Property</span></a>
+            <a mat-list-item href="..." *ngFor="let property of properties | async"> {{ property.name }} </a>
           </mat-nav-list>
         </mat-card-content>
       </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="9">
+      
     </mat-grid-tile>
   </mat-grid-list>
 </div>
