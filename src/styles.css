@@ -8,6 +8,10 @@ mat-toolbar {
 .toolbar-text {
     font-size: 40px;
     font-family: 'Lobster';
+    text-align: center;
+    margin: 0;
+    line-height: 10vh;
+    color: aliceblue;
 }
 body {
     margin: 0;
@@ -16,5 +20,15 @@ body {
     height: 100vh;
     width: 100vw;
     padding: 0;
+    margin: 0;
+}
+.property-list-card {
+    margin-top: 30px;
+    height: 100%;
+    width: 100%;
+    border-right: 5px solid dodgerblue;
+}
+.property-list-card-head {
+    text-align: center;
     margin: 0;
 }
