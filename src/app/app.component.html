@@ -8,14 +8,14 @@
         <mat-card-title><h4 class="property-list-card-head">Properties</h4><hr></mat-card-title>
         <mat-card-content>
           <mat-nav-list>
-            <a mat-list-item href="..."><span style="color: dodgerblue;">Add New Property</span></a>
+            <a mat-list-item [routerLink]="['/']"><span style="color: dodgerblue;">Add New Property</span></a>
             <a mat-list-item href="..." *ngFor="let property of properties | async"> {{ property.name }} </a>
           </mat-nav-list>
         </mat-card-content>
       </mat-card>
     </mat-grid-tile>
     <mat-grid-tile [colspan]="9">
-      
+        <router-outlet></router-outlet>
     </mat-grid-tile>
   </mat-grid-list>
 </div>
