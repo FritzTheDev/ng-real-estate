@@ -9,3 +9,12 @@ mat-toolbar {
     font-size: 40px;
     font-family: 'Lobster';
 }
+body {
+    margin: 0;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
