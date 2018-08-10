@@ -1,9 +1,9 @@
 <div class="container">
-  <mat-toolbar>
-    <span class="toolbar-text">ReKrunch Real Estate</span>
-  </mat-toolbar>
-  <mat-grid-list cols="12" rowHeight="fit" gutterSize="5px">
-
+  <div style="width: 100vw; height: 10vh; background-color: dodgerblue;">
+    <h1 class="toolbar-text">ReKrunch Real Estate</h1>
+  </div>
+  <mat-grid-list cols="12" style="height: 90%;" rowHeight="fit" gutterSize="5px">
+    <mat-grid-tile [colspan]="3" style="background-color: gray;"></mat-grid-tile>
   </mat-grid-list>
   <router-outlet></router-outlet>
 </div>
